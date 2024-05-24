@@ -1,3 +1,81 @@
 fn main() {
+    // ------------------ Variables ------------------- //
+
+    let a_number: u8 = 1;
+
+    let a_word = "One";
+
+    let shadow_num: u8 = 42;
+
+    let shadow_num = shadow_num + 1;
+
+    let shadow_num = shadow_num * 3;
+
+    let mut name = "Ale";
+
+    name = "Ale Weber";
+
+    let _word_a: char = 'A';
+    let _word_w: char = 'W';
+
+    // --------- Tuple --------- //
+
+    let tupla_a = ('A', 15, true, "Hello, it's me...");
+
+    // --------- strucs ---------- //
+
+    struct Student {
+        name: String,
+        birth_date: String,
+        dev: String,
+        age: u8,
+    }
+
+    let ale: Student = Student {
+        name: String::from("Ale"),
+        birth_date: String::from("16-10-1998"),
+        dev: String::from("Backend"),
+        age: 25,
+    };
+
+    struct Grades(char, char, char);
+
+    let mark_1 = Grades('A', 'B', 'C');
+
+    // -------------------- Enums ----------------------- //
+    #[derive(Debug)]
+    enum WebEvent {
+        Weber(bool),
+    }
+
+    // ----------------- Functions -------------------- //
+
     println!("Hello, world!");
+
+    println!("Hello {}, Genreal {}", "There", "Kenobi!");
+
+    println!("the value of shadow_num is: {}", shadow_num);
+
+    println!("de name is: {}", name);
+
+    println!("{} is a number, {} is a word", a_number, a_word);
+
+    println!("initals: {} y {}", _word_a, _word_w);
+
+    println!("This is a Tuple: the letter {}, the number {}, the boolean: {}, and the part of the song: {}", tupla_a.0, tupla_a.1, tupla_a.2, tupla_a.3);
+    println!(
+        "mark 1: {}, mark2: {}, mark3: {} ",
+        mark_1.0, mark_1.1, mark_1.2
+    );
+
+    println!(
+        "Name: {}, bitrh date: {}, dev: {}, age: {}",
+        ale.name, ale.birth_date, ale.dev, ale.age
+    );
+
+    let last_name = WebEvent::Weber(true);
+
+    println!("This is an Enum {:?}", last_name);
+
+    todo!("***** Terminar de aprender Rust! *****");
 }
