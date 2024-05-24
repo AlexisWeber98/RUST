@@ -1,3 +1,5 @@
+mod exercises;
+
 fn main() {
     // ------------------ Variables ------------------- //
 
@@ -13,16 +15,22 @@ fn main() {
 
     let mut name = "Ale";
 
+    println!("pile Name: {name}");
+
     name = "Ale Weber";
 
     let _word_a: char = 'A';
     let _word_w: char = 'W';
 
+    let bye = "Goodbye Horses";
+
+    let number = 12;
+
     // --------- Tuple --------- //
 
-    let tupla_a = ('A', 15, true, "Hello, it's me...");
+    let tuple_a = ('A', 15, true, "Hello, it's me...");
 
-    // --------- strucs ---------- //
+    // --------- struct ---------- //
 
     struct Student {
         name: String,
@@ -52,24 +60,25 @@ fn main() {
 
     println!("Hello, world!");
 
-    println!("Hello {}, Genreal {}", "There", "Kenobi!");
+    println!("Hello {}, General {}", "There", "Kenobi!");
 
     println!("the value of shadow_num is: {}", shadow_num);
 
-    println!("de name is: {}", name);
+    println!("de name is: {name}");
 
     println!("{} is a number, {} is a word", a_number, a_word);
 
-    println!("initals: {} y {}", _word_a, _word_w);
+    println!("initials: {} y {}", _word_a, _word_w);
 
-    println!("This is a Tuple: the letter {}, the number {}, the boolean: {}, and the part of the song: {}", tupla_a.0, tupla_a.1, tupla_a.2, tupla_a.3);
+    println!("This is a Tuple: the letter {}, the number {}, the boolean: {}, and the part of the song: {}", tuple_a.0, tuple_a.1, tuple_a.2, tuple_a.3);
+
     println!(
         "mark 1: {}, mark2: {}, mark3: {} ",
         mark_1.0, mark_1.1, mark_1.2
     );
 
     println!(
-        "Name: {}, bitrh date: {}, dev: {}, age: {}",
+        "Name: {}, birth date: {}, dev: {}, age: {}",
         ale.name, ale.birth_date, ale.dev, ale.age
     );
 
@@ -77,5 +86,21 @@ fn main() {
 
     println!("This is an Enum {:?}", last_name);
 
-    todo!("***** Terminar de aprender Rust! *****");
+    fn goodbye(message: &str) {
+        println!("\n{}", message)
+    }
+
+    fn divide_by_5(num: u32) -> u32 {
+        num / 5
+    }
+
+    divide_by_5(number);
+
+    goodbye(bye);
+
+    println!("{number} divided by 5 is {}", divide_by_5(number));
+
+    exercises::exercise();
+
+    todo!("***** Finish ti learn Rust! *****");
 }
