@@ -1,3 +1,4 @@
+
 pub fn exercise() {
     struct Car {
         color: String,
@@ -37,4 +38,14 @@ pub fn exercise() {
 
     car = car_factory(String::from("Yellow"), Transmission::SemiAuto, true, 15);
     println!("Created second car: color {:?}, with transmission: {:?}, convertible: {:?} and with mileage of: {:?} km", car.color, car.transmission , car.convertible, car.mileage);
+
+
+
+
+    let days_array = ["Sunday", "Monday", "Tuesday", "Wednesday", "thursday", "Friday", "Saturday"];
+
+    let bytes = [0;5];
+
+    
+
 }
