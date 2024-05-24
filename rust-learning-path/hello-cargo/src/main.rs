@@ -1,5 +1,23 @@
 mod exercises;
 
+// -------------------- Enums ----------------------- //
+#[derive(Debug)]
+enum WebEvent {
+    Weber(bool),
+}
+
+fn handle_web_event(event: WebEvent) {
+    match event {
+        WebEvent::Weber(value) => {
+            if value {
+                println!("Weber is active");
+            } else {
+                println!("Weber is not active");
+            }
+        }
+    }
+}
+
 fn main() {
     // ------------------ Variables ------------------- //
 
@@ -50,12 +68,6 @@ fn main() {
 
     let mark_1 = Grades('A', 'B', 'C');
 
-    // -------------------- Enums ----------------------- //
-    #[derive(Debug)]
-    enum WebEvent {
-        Weber(bool),
-    }
-
     // ----------------- Functions -------------------- //
 
     println!("Hello, world!");
@@ -84,7 +96,7 @@ fn main() {
 
     let last_name = WebEvent::Weber(true);
 
-    println!("This is an Enum {:?}", last_name);
+    println!("This is an Enum: {:?}", last_name);
 
     fn goodbye(message: &str) {
         println!("\n{}", message)
@@ -93,6 +105,8 @@ fn main() {
     fn divide_by_5(num: u32) -> u32 {
         num / 5
     }
+
+    handle_web_event(last_name);
 
     divide_by_5(number);
 
