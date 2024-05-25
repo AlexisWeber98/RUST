@@ -100,9 +100,20 @@ pub fn exercise() {
     v.push(2);
     v.push(3);
 
+    let mut index_vec = vec![5, 16, 17];
+
     println!("first day of array: {}", days_array[0]);
     println!("Zeroes: {bytes:?}");
     println!("this is an vector:{v:?}, length: {}", v.len());
 
+    println!("the position 2 from V vector is: {}", v[2]);
 
+    println!("Pop off: {:?}", v.pop());
+    println!("this is an vector after pop: {v:?}, length: {}", v.len());
+
+    index_vec[1] = 5;
+
+    println!("after change: {v:?}");
+
+    println!("{index_vec:?}");
 }

@@ -1,3 +1,4 @@
+mod carExercise;
 mod exercises;
 
 // -------------------- Enums ----------------------- //
@@ -115,6 +116,8 @@ fn main() {
     println!("{number} divided by 5 is {}", divide_by_5(number));
 
     exercises::exercise();
+
+    carExercise::car_exercise();
 
     todo!("***** Finish ti learn Rust! *****");
 }
