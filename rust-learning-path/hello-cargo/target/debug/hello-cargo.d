@@ -1,1 +1,0 @@
-/home/ale/Projects/Projects/Rust/rust-learning-path/hello-cargo/target/debug/hello-cargo: /home/ale/Projects/Projects/Rust/rust-learning-path/hello-cargo/src/carExercise.rs /home/ale/Projects/Projects/Rust/rust-learning-path/hello-cargo/src/exercises.rs /home/ale/Projects/Projects/Rust/rust-learning-path/hello-cargo/src/main.rs

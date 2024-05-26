@@ -1,4 +1,4 @@
-mod carExercise;
+mod car_exercise;
 mod exercises;
 
 // -------------------- Enums ----------------------- //
@@ -117,7 +117,7 @@ fn main() {
 
     exercises::exercise();
 
-    carExercise::car_exercise();
+    car_exercise::car_exercise();
 
     todo!("***** Finish ti learn Rust! *****");
 }
