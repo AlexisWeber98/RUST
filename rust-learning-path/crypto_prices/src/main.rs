@@ -5,8 +5,8 @@ use ureq;
 
 #[derive(Deserialize)]
 struct CoinResponse {
-    time: String,
-    asset_id_base: String,
+    _time: String,
+    _asset_id_base: String,
     asset_id_quote: String,
     rate: f64,
 }
