@@ -5,8 +5,8 @@ use ureq;
 
 #[derive(Deserialize)]
 struct CoinResponse {
-    _time: String,
-    _asset_id_base: String,
+    time: String,
+    asset_id_base: String,
     asset_id_quote: String,
     rate: f64,
 }
@@ -37,7 +37,7 @@ fn main() -> Result<(), MyError> {
     match get_precio(&coin) {
         Ok(precio) => println!(
             "El precio de {} es: {} {}",
-            coin, precio.rate.round(), precio.asset_id_quote
+            coin, precio.rate, precio.asset_id_quote
         ),
         Err(error) => println!("Hubo un error: {}", error),
     }
