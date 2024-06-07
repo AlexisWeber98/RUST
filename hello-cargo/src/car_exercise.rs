@@ -36,7 +36,7 @@ pub fn car_exercise() {
         }
     }
 
-    enum Color {
+    enum _Color {
         Blue,
         Green,
         Red,
@@ -67,4 +67,7 @@ pub fn car_exercise() {
         "Car order 3: {:?}, Hard top = {}, {:?}, {} , {} miles",
         car.age.0, car.roof, car.color, car.color, car.age.1
     );
+
+
+    
 }

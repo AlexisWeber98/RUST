@@ -119,5 +119,20 @@ fn main() {
 
     car_exercise::car_exercise();
 
+    if 1 == 2 {
+        println!("True, the numbers are equal.")
+    } else {
+        println!("False, the numbers are not equal")
+    };
+
+    let formal = true;
+    let greeting = if formal {
+        "Good day to you"
+    } else {
+        "Hey!"
+    };
+
+    println!("{greeting}");
+
     todo!("***** Finish ti learn Rust! *****");
 }
