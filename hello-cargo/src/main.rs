@@ -1,5 +1,6 @@
 mod car_exercise;
 mod exercises;
+mod hashmap;
 
 // -------------------- Enums ----------------------- //
 #[derive(Debug)]
@@ -134,5 +135,7 @@ fn main() {
 
     println!("{greeting}");
 
-    todo!("***** Finish ti learn Rust! *****");
+    hashmap::hash_map();
+
+    todo!("***** Finish to learn Rust! *****");
 }
