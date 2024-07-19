@@ -1,6 +1,7 @@
 mod car_exercise;
 mod exercises;
 mod hashmap;
+mod loops;
 
 // -------------------- Enums ----------------------- //
 #[derive(Debug)]
@@ -127,15 +128,13 @@ fn main() {
     };
 
     let formal = true;
-    let greeting = if formal {
-        "Good day to you"
-    } else {
-        "Hey!"
-    };
+    let greeting = if formal { "Good day to you" } else { "Hey!" };
 
     println!("{greeting}");
 
     hashmap::hash_map();
+
+    loops::loops();
 
     todo!("***** Finish to learn Rust! *****");
 }

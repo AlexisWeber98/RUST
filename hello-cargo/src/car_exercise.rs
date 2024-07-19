@@ -67,7 +67,4 @@ pub fn car_exercise() {
         "Car order 3: {:?}, Hard top = {}, {:?}, {} , {} miles",
         car.age.0, car.roof, car.color, car.color, car.age.1
     );
-
-
-    
 }
