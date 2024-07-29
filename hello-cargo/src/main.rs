@@ -1,7 +1,7 @@
 mod car_exercise;
-mod exercises;
 mod hashmap;
 mod loops;
+mod person_exercises;
 
 // -------------------- Enums ----------------------- //
 #[derive(Debug)]
@@ -117,9 +117,9 @@ fn main() {
 
     println!("{number} divided by 5 is {}", divide_by_5(number));
 
-    exercises::exercise();
+    person_exercises::person_exercise();
 
-    car_exercise::car_exercise();
+    car_exercise::exercise();
 
     if 1 == 2 {
         println!("True, the numbers are equal.")
