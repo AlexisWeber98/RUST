@@ -43,8 +43,7 @@ fn car_factory(order: i32, miles: u32) -> Car {
     // If color > 4, reduce color to valid index
     let mut color = order as usize;
     if color > 4 {
-        // color = 5 --> index 1, 6 --> 2, 7 --> 3, 8 --> 4
-        color = color - 4;
+        color = (color - 1) % 4 + 1; // Asegura que el índice esté en el rango 1-4
     }
 
     // Add variety to orders for motor type and roof type
@@ -78,25 +77,22 @@ pub fn exercise() {
     // Declare a car as mutable "Car" struct
     let mut car: Car;
 
-// Start with zero miles
-let mut miles = 0;
+    // Start with zero miles
+    let mut miles = 0;
 
-for order in 1..12 {
+    for order in 1..12 {
+        // Call car_factory to fulfill order
+        // Add order <K, V> pair to "orders" hash map
+        // Call println! to show order details from the hash map
+        car = car_factory(order, miles);
+        orders.insert(order, car);
+        println!("Car order {}: {:?}", order, orders.get(&order));
 
-
-
-    // Call car_factory to fulfill order
-    // Add order <K, V> pair to "orders" hash map
-    // Call println! to show order details from the hash map        
-    car = car_factory(order, miles);
-    orders.insert(order, car);
-    println!("Car order {}: {:?}", order, orders.get(&order));
-
-    // Reset miles for order variety
-    if miles == 2100 {
-        miles = 0;
-    } else {
-        miles = miles + 700;
+        // Reset miles for order variety
+        if miles == 2100 {
+            miles = 0;
+        } else {
+            miles = miles + 700;
+        }
     }
-}
 }

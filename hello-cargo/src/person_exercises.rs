@@ -10,7 +10,7 @@ pub fn person_exercise() {
 
     impl Person {
         fn new(name: String, age: i32, dni: i32) -> Person {
-            // se crea una implmntacion con new() (Class / obj)
+            // se crea una implementación con new() (Class / obj)
             Person { name, age, dni }
         }
     }
@@ -26,7 +26,7 @@ pub fn person_exercise() {
 
     let pepe: Person = Person::new("Pepe".to_string(), 22, 42566832);
 
-    println!("Pepe es: {pepe:#?}"); // ésta sintaxis perimte  imprimir la estructura de manera mas legible, parecida e JSON en la consola
+    println!("Pepe es: {pepe:#?}"); // ésta sintaxis permite  imprimir la estructura de manera mas legible, parecida e JSON en la consola
 
     trait MostrarEnConsola {
         fn mostrar_en_consola(&self);
@@ -46,7 +46,7 @@ pub fn person_exercise() {
         "Monday",
         "Tuesday",
         "Wednesday",
-        "thursday",
+        "Thursday",
         "Friday",
         "Saturday",
     ];

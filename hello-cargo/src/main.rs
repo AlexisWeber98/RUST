@@ -1,4 +1,6 @@
 mod car_exercise;
+mod err_option_exercise;
+mod errors;
 mod hashmap;
 mod loops;
 mod person_exercises;
@@ -135,6 +137,10 @@ fn main() {
     hashmap::hash_map();
 
     loops::loops();
+
+    errors::errs();
+
+    err_option_exercise::full_name();
 
     todo!("***** Finish to learn Rust! *****");
 }

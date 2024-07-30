@@ -1,5 +1,5 @@
 pub fn loops() {
-    // El siguiente loop es infinito
+    // El siguiente loop, que está comentado es infinito
 
     // loop {
     //     println!("we loop forever")
