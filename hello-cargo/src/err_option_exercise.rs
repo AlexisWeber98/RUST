@@ -23,13 +23,13 @@ fn build_full_name(person: &Person) -> String {
     return full_name;
 }
 
-pub fn full_name() { 
+pub fn full_name() {
     let peter = Person {
         first_name: String::from("Peter"),
         second_name: Some(String::from("John")),
         last_name: String::from("McKenzie"),
     };
-    
+
     assert_eq!(build_full_name(&peter), "Peter John Mackenzie");
     println!("person 1: {peter:?}");
 

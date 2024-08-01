@@ -3,7 +3,10 @@ mod err_option_exercise;
 mod errors;
 mod hashmap;
 mod loops;
+mod memory;
 mod person_exercises;
+mod result;
+mod result_exercise;
 
 // -------------------- Enums ----------------------- //
 #[derive(Debug)]
@@ -137,6 +140,12 @@ fn main() {
     hashmap::hash_map();
 
     loops::loops();
+
+    result::result();
+
+    result_exercise::result_exercise();
+
+    memory::memory_lesson();
 
     errors::errs();
 
