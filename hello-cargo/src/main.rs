@@ -5,6 +5,7 @@ mod hashmap;
 mod loops;
 mod memory;
 mod person_exercises;
+mod refereces;
 mod result;
 mod result_exercise;
 
@@ -147,6 +148,7 @@ fn main() {
 
     memory::memory_lesson();
 
+    refereces::references();
     errors::errs();
 
     err_option_exercise::full_name();

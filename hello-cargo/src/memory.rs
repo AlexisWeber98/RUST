@@ -58,7 +58,7 @@ pub fn memory_lesson() {
             process_copy(s) // se envía a la función moviendo el valor de la asignación original
         }
         called_copy();
-        
+
         // Este enfoque puede resultar útil, aunque puede ralentizar el código, ya que cada llamada a clone realiza una copia completa de los datos. Este método a menudo incluye asignaciones de memoria u otras operaciones costosas. Estos costos se pueden evitar si los valores "se toman prestados" mediante referencias
     }
 
