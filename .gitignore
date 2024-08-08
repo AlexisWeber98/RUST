@@ -1,5 +1,8 @@
-/cripto-pryces/target*
-/hello-cargo/target*
-/hello-world/target*
-testing/target*
-tesing/target*
+debug/
+target/
+
+Cargo.lock
+
+**/*.rs.bk
+
+*.pdb
