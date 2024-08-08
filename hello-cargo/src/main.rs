@@ -1,3 +1,4 @@
+mod autentication;
 mod car_exercise;
 mod err_option_exercise;
 mod errors;
@@ -9,7 +10,6 @@ mod rasgos;
 mod refereces;
 mod result;
 mod result_exercise;
-
 // -------------------- Enums ----------------------- //
 #[derive(Debug)]
 enum WebEvent {
@@ -150,6 +150,10 @@ fn main() {
     memory::memory_lesson();
 
     rasgos::main_rasgos();
+
+    let user = autentication::User::new("Jeremy", "Sueper-secret");
+    println!("The username is: {}", user.get_username());
+    user.set_password("even-more-secret");
 
     errors::errs();
 
